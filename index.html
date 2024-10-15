@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Learning Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .filter-container {
+            margin-bottom: 20px;
+        }
+        .filter-container label {
+            margin-right: 10px;
+        }
+        .course-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .course-table th, .course-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        .course-table th {
+            background-color: #007bff;
+            color: white;
+        }
+        .course-table td a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .course-table td a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Deep Learning Courses</h1>
+
+    <div class="filter-container">
+        <label for="platform-filter">Filter by Platform:</label>
+        <select id="platform-filter">
+            <option value="all">All</option>
+            <option value="coursera">Coursera</option>
+            <option value="udemy">Udemy</option>
+            <option value="youtube">YouTube</option>
+            <option value="linkedin">LinkedIn Learning</option>
+            <option value="simplilearn">Simplilearn</option>
+        </select>
+    </div>
+
+    <table class="course-table">
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Platform</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody id="course-list">
+            <tr data-platform="coursera">
+                <td>Deep Learning Specialization</td>
+                <td>Coursera</td>
+                <td><a href="https://www.coursera.org/specializations/deep-learning">Link</a></td>
+            </tr>
+            <tr data-platform="coursera">
+                <td>TensorFlow 2 for Deep Learning Specialization</td>
+                <td>Coursera</td>
+                <td><a href="https://www.coursera.org/specializations/tensorflow2-deep-learning">Link</a></td>
+            </tr>
+            <tr data-platform="coursera">
+                <td>Advanced Machine Learning</td>
+                <td>Coursera</td>
+                <td><a href="https://www.coursera.org/specializations/aml">Link</a></td>
+            </tr>
+            <tr data-platform="udemy">
+                <td>Deep Learning A-Z: Hands-On Artificial Neural Networks</td>
+                <td>Udemy</td>
+                <td><a href="https://www.udemy.com/course/deeplearning/">Link</a></td>
+            </tr>
+            <tr data-platform="udemy">
+                <td>TensorFlow 2.0: Deep Learning and AI</td>
+                <td>Udemy</td>
+                <td><a href="https://www.udemy.com/course/tensorflow-2/">Link</a></td>
+            </tr>
+            <tr data-platform="udemy">
+                <td>Complete Guide to TensorFlow for Deep Learning with Python</td>
+                <td>Udemy</td>
+                <td><a href="https://www.udemy.com/course/complete-guide-to-tensorflow-for-deep-learning-with-python/">Link</a></td>
+            </tr>
+            <tr data-platform="udemy">
+                <td>Practical Deep Learning with PyTorch</td>
+                <td>Udemy</td>
+                <td><a href="https://www.udemy.com/course/practical-deep-learning-with-pytorch/">Link</a></td>
+            </tr>
+            <tr data-platform="youtube">
+                <td>Deep Learning (Complete Course)</td>
+                <td>YouTube</td>
+                <td><a href="https://www.youtube.com/watch?v=aircAruvnKk">Link</a></td>
+            </tr>
+            <tr data-platform="youtube">
+                <td>Deep Learning for Computer Vision</td>
+                <td>YouTube</td>
+                <td><a href="https://www.youtube.com/watch?v=EJzb1pO9D8U">Link</a></td>
+            </tr>
+            <tr data-platform="youtube">
+                <td>Neural Networks and Deep Learning</td>
+                <td>YouTube</td>
+                <td><a href="https://www.youtube.com/watch?v=ILsSGf5iFJY">Link</a></td>
+            </tr>
+            <tr data-platform="linkedin">
+                <td>Deep Learning: Neural Networks with Python</td>
+                <td>LinkedIn Learning</td>
+                <td><a href="https://www.linkedin.com/learning/deep-learning-neural-networks-with-python">Link</a></td>
+            </tr>
+            <tr data-platform="linkedin">
+                <td>Building Deep Learning Applications with TensorFlow</td>
+                <td>LinkedIn Learning</td>
+                <td><a href="https://www.linkedin.com/learning/building-deep-learning-applications-with-tensorflow">Link</a></td>
+            </tr>
+            <tr data-platform="linkedin">
+                <td>Deep Learning: Image Recognition with TensorFlow</td>
+                <td>LinkedIn Learning</td>
+                <td><a href="https://www.linkedin.com/learning/deep-learning-image-recognition-with-tensorflow">Link</a></td>
+            </tr>
+            <tr data-platform="simplilearn">
+                <td>Introduction to Deep Learning</td>
+                <td>Simplilearn</td>
+                <td><a href="https://www.simplilearn.com/learn-deep-learning-basics-free-course-skillup">Link</a></td>
+            </tr>
+            <tr data-platform="simplilearn">
+                <td>Deep Learning Certification Training Course</td>
+                <td>Simplilearn</td>
+                <td><a href="https://www.simplilearn.com/deep-learning-certification-training-course">Link</a></td>
+            </tr>
+            <tr data-platform="simplilearn">
+                <td>Artificial Intelligence and Deep Learning</td>
+                <td>Simplilearn</td>
+                <td><a href="https://www.simplilearn.com/artificial-intelligence-and-deep-learning-course">Link</a></td>
+            </tr>
+            <tr data-platform="udemy">
+                <td>Deep Learning for Business</td>
+                <td>Udemy</td>
+                <td><a href="https://www.udemy.com/course/deep-learning-for-business/">Link</a></td>
+            </tr>
+            <tr data-platform="udemy">
+                <td>Convolutional Neural Networks for Visual Recognition</td>
+                <td>Udemy</td>
+                <td><a href="https://www.udemy.com/course/cnn-visual-recognition/">Link</a></td>
+            </tr>
+            <tr data-platform="coursera">
+                <td>Deep Learning in Python</td>
+                <td>Coursera</td>
+                <td><a href="https://www.coursera.org/learn/deep-learning-in-python">Link</a></td>
+            </tr>
+            <tr data-platform="coursera">
+                <td>Machine Learning with TensorFlow on Google Cloud</td>
+                <td>Coursera</td>
+                <td><a href="https://www.coursera.org/learn/machine-learning-tensorflow-gcp">Link</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById('platform-filter').addEventListener('change', function() {
+            var selectedPlatform = this.value;
+            var courses = document.querySelectorAll('#course-list tr');
+
+            courses.forEach(function(course) {
+                if (selectedPlatform === 'all' || course.getAttribute('data-platform') === selectedPlatform) {
+                    course.style.display = '';
+                } else {
+                    course.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
